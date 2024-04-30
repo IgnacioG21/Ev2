@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pagina Ev2 </title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        /* Links */
+        a:hover {
+            color: red;
+        }
+
+        a {
+            background-color: white;
+            border: 1px;
+            border-color: red;
+            border-style: solid;
+            border-radius: 10px;
+            color: black;
+            font-weight: 550;
+            font-family: monospace;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        /* Cuerpo */
+        body {
+            background-color: red;
+            color: white;
+            font-family: sans-serif;
+
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        img {
+            border: 5px solid rgb(90, 0, 0);
+            border-radius: 10px;
+        }
+
+        /* Clases */
+        .contenedor {
+            /* Contenedor de imagen 1 */
+            display: flex;
+        }
+
+        .img1 {
+            width: 750px;
+        }
+
+        .figura1 {
+            /* Primera figura */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nota {
+            background-color: orangered;
+            border: 3px solid rgb(90, 0, 0);
+            border-radius: 10px;
+            color: black;
+            font-weight: 550;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .lista1 {
+            /* ol */
+            background-color: black;
+            border: 5px solid rgb(90, 0, 0);
+            border-radius: 10px;
+            width: 318px;
+            justify-content: flex-start;
+            text-align: center;
+            /* width: 318px; en teléfono - width: 334px; en pc */
+        }
+
+        .secciones {
+            /* nav */
+            display: flex;
+            justify-content: space-between;
+            margin: 0 100 0 100;
+        }
+
+        .parrafo {
+            /* Primer parrafo */
+            background-color: black;
+            border: 5px solid rgb(90, 0, 0);
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .titulo {
+            /* header */
+            background-color: rgb(0, 0, 0);
+            border: 5px solid rgb(90, 0, 0);
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 125px;
+            text-align: center;
+        }
+
+        /* Media Querys */
+
+        /* 400px    -   800px */
+        @media screen and (max-width: 800px) {
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img1 {
+                width: 375px;
+            }
+
+            .figura1 {
+                /* Primera figura */
+                width: 384px;
+                margin: 20px 0px 0px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        /* 800px    -   850px */
+        @media screen and (min-width: 800px) and (max-width: 850px) {
+            .img1 {
+                width: 400px;
+            }
+        }
+
+        /* 850px    -   900px */
+        @media screen and (min-width: 850px) and (max-width: 900px) {
+            .img1 {
+                width: 450px;
+            }
+        }
+
+        /* 900px    -   950px */
+        @media screen and (min-width: 900px) and (max-width: 950px) {
+            .img1 {
+                width: 500px;
+            }
+        }
+
+        /* 950px    -   1000px */
+        @media screen and (min-width: 950px) and (max-width: 1000px) {
+            .img1 {
+                width: 550px;
+            }
+        }
+
+        /* 1000px    -   1050px */
+        @media screen and (min-width: 1000px) and (max-width: 1050px) {
+            .img1 {
+                width: 600px;
+            }
+        }
+
+        /* 1050px    -   1100px */
+        @media screen and (min-width: 1000px) and (max-width: 1100px) {
+            .img1 {
+                width: 650px;
+            }
+        }
+
+        /* 1100px    -   1150px */
+        @media screen and (min-width: 1100px) and (max-width: 1150px) {
+            .img1 {
+                width: 670px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="titulo">
+        <h1> Juegos Populares </h1>
+        <nav class="secciones">
+            <table style="width: 100%;">
+                <tr>
+                    <td style="padding: 10px 31px 10px 10px; width: 50%;">
+                        <a href="https://vimm.net" target="_blank"> Jugar </a>
+                    </td>
+
+                    <td style="padding: 10px; width: 50%;">
+                        <a href=""> Quienes Somos </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; width: 50%;">
+                        <a href=""> Contacto </a>
+                    </td>
+
+                    <td style="padding: 10px 46px 10px 10px; width: 50%;">
+                        <a href=""> Recursos </a>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section>
+        <div class="parrafo">
+            <p> Esta página recopila una lista con los juegos más influyentes de su respectiva epoca, conocerás la
+                historia,
+                especificaciones, información y alcance de cada juego. Esta lista está ordenada cronologicamente, si
+                deseas
+                ver una epoca especifica revisar:<br> </p>
+        </div>
+
+        <br>
+
+        <div class="contenedor">
+            <div class="lista1">
+                <ol>
+                    <li>
+                        <p> 1980 - 1990 </p>
+                    </li>
+
+                    <li>
+                        <p> 1990 - 2000 </p>
+                    </li>
+
+                    <li>
+                        <p> 2000 - 2010 </p>
+                    </li>
+
+                    <li>
+                        <p> 2010 - 2020 </p>
+                    </li>
+
+                    <li>
+                        <p> 2020 - Actualidad </p>
+                    </li>
+                </ol>
+
+                <aside class="nota">
+                    <p> Nota: La lista que verás se ha elaborado de manera imparcial y objetiva, basada
+                        en información recopilada y sintetizada de diversas fuentes. </p>
+                </aside>
+            </div>
+
+            <figure class="figura1">
+                <img src="https://i.blogs.es/4d650a/gogga/1366_2000.jpeg" alt="juegos" class="img1">
+            </figure>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>

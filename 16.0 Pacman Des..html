@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pagina Ev2 </title>
+    <link rel="stylesheet" href="Estilo1-1.css">
+    <style>
+        /* Links */
+        a:hover {
+            color: red;
+        }
+
+        /* Cuerpo */
+        body {
+            background-color: red;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            margin: 5px 0px 0px 0px;
+        }
+
+        img {
+            border: 5px solid rgb(90, 0, 0);
+            border-radius: 10px;
+        }
+
+
+        /* Clases */
+        .contenedor {
+            /* ol 1     -       img 1 */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            gap: 8px;
+            width: 100%;
+        }
+
+        .contenedor-imagen1 {
+            /* Primera figura */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0px;
+        }
+
+
+
+
+
+
+        /* Pac-Man */
+        .contenedor-pacman-img {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .contenedor-pacman {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            gap: 10px;
+            width: 100%;
+            margin: 10px 0px 0px 0px;
+        }
+
+        .contenedor-pacman-parrafo {
+            background-color: rgb(0, 0, 0);
+            border: 5px solid rgb(90, 0, 0);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            width: 90%;
+
+        }
+
+        .img-info {
+            width: 500px;
+        }
+
+
+
+
+        /* */
+        .contenedor-lista {
+            /* ol 1*/
+            width: 100%;
+            /* width: 318px; en teléfono - width: 334px; en pc */
+        }
+
+        .header-inicio {
+            /* header */
+            background-color: rgb(0, 0, 0);
+            border: 5px solid rgb(90, 0, 0);
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 125px;
+            text-align: center;
+        }
+
+        .img1 {
+            max-width: 700px;
+            height: auto;
+        }
+
+        .lista {
+            background-color: black;
+            border: 5px solid rgb(90, 0, 0);
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .link {
+            background-color: white;
+            border: 1px solid red;
+            border-radius: 10px;
+            color: black;
+            font-weight: 550;
+            font-family: monospace;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .nota {
+            background-color: orangered;
+            border: 3px solid rgb(90, 0, 0);
+            border-radius: 10px;
+            color: black;
+            font-weight: 550;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .parrafo {
+            background-color: black;
+            border: 5px solid rgb(90, 0, 0);
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .secciones {
+            /* nav */
+            display: flex;
+            justify-content: space-between;
+            margin: 0 100 0 100;
+        }
+
+        .seccion {
+            background-color: yellow;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        .sub {
+            color: red;
+            font-weight: 549;
+        }
+
+        .titulocen {
+            display: inline-block;
+            background-color: black;
+            border: 5px solid rgb(90, 0, 0);
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .tituloizq {
+            display: inline-block;
+            background-color: black;
+            border: 5px solid rgb(90, 0, 0);
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Media Querys */
+
+        /* 375px    -   400px */
+        @media screen and (min-width: 375px) and (max-width: 400px) {
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .contenedor-pacman {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img1 {
+                width: 320px;
+            }
+
+            .img-info {
+                width: 90%;
+            }
+
+            .contenedor-imagen1 {
+                width: 100%;
+                margin: 20px 0px 0px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        /* 400px */
+        /* Usado de ejemplo */
+        @media screen and (min-width: 400px) and (max-width: 415px) {
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .contenedor-pacman {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img1 {
+                width: 375px;
+            }
+
+            .img-info {
+                width: 90%;
+            }
+
+            .contenedor-imagen1 {
+                width: 100%;
+                margin: 20px 0px 0px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        /* 415px    -   455px */
+        @media screen and (min-width: 415px) and (max-width: 455px) {
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .contenedor-pacman {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img1 {
+                width: 380px;
+            }
+
+            .img-info {
+                width: 90%;
+            }
+
+            .contenedor-imagen1 {
+                /* Primera figura */
+                width: 100%;
+                margin: 20px 0px 0px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        /* 455px    -   495px */
+        @media screen and (min-width: 455px) and (max-width: 495px) {
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .contenedor-pacman {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img1 {
+                width: 420px;
+            }
+
+            .img-info {
+                width: 90%;
+            }
+
+
+            .contenedor-imagen1 {
+                /* Primera figura */
+                width: 100%;
+                margin: 20px 0px 0px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        /* 495px    -   535px */
+        @media screen and (min-width: 495px) and (max-width: 535px) {
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .contenedor-pacman {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img1 {
+                width: 440px;
+            }
+
+            .img-info {
+                width: 90%;
+            }
+
+            .contenedor-imagen1 {
+                /* Primera figura */
+                width: 100%;
+                margin: 20px 0px 0px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        /* 535px    -   575px */
+        @media screen and (min-width: 535px) and (max-width: 575px) {
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img1 {
+                width: 480px;
+            }
+
+            .contenedor-imagen1 {
+                /* Primera figura */
+                width: 100%;
+                margin: 20px 0px 0px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        /* 575px    -   615px */
+        @media screen and (min-width: 575px) and (max-width: 615px) {
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img1 {
+                width: 520px;
+            }
+
+            .contenedor-imagen1 {
+                /* Primera figura */
+                width: 100%;
+                margin: 20px 0px 0px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        /* 615px    -   655px */
+        @media screen and (min-width: 615px) and (max-width: 655px) {
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img1 {
+                width: 560px;
+            }
+
+            .contenedor-imagen1 {
+                /* Primera figura */
+                width: 100%;
+                margin: 20px 0px 0px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        /* 655px    -   695px */
+        @media screen and (min-width: 655px) and (max-width: 695px) {
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img1 {
+                width: 600px;
+            }
+
+            .contenedor-imagen1 {
+                /* Primera figura */
+                width: 100%;
+                margin: 20px 0px 0px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        /* 695px    -   735px */
+        @media screen and (min-width: 695px) and (max-width: 735px) {
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img1 {
+                width: 640px;
+            }
+
+            .contenedor-imagen1 {
+                /* Primera figura */
+                width: 100%;
+                margin: 20px 0px 0px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        /* 735px    -   775px */
+        @media screen and (min-width: 735px) and (max-width: 775px) {
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .img1 {
+                width: 700px;
+            }
+
+            .contenedor-imagen1 {
+                /* Primera figura */
+                width: 100%;
+                margin: 20px 0px 0px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        /* 800px    -   860px */
+        @media screen and (min-width: 775px) and (max-width: 860px) {
+            .img1 {
+                width: 350px;
+                height: 230px;
+                margin: 5px 0px 15px 0px;
+            }
+        }
+
+        /* 860px    -   900px */
+        @media screen and (min-width: 860px) and (max-width: 900px) {
+            .img1 {
+                width: 400px;
+                height: 260px;
+            }
+        }
+
+        /* 900px    -   940px */
+        @media screen and (min-width: 900px) and (max-width: 940px) {
+            .img1 {
+                width: 450px;
+                height: 270px;
+            }
+        }
+
+        /* 940px    -   980px */
+        @media screen and (min-width: 940px) and (max-width: 980px) {
+            .img1 {
+                width: 500px;
+                height: 280px;
+            }
+        }
+
+        /* 980px    -   1020px */
+        @media screen and (min-width: 980px) and (max-width: 1020px) {
+            .img1 {
+                width: 550px;
+                height: 290px;
+            }
+        }
+
+        /* 1020px    -   1060px */
+        @media screen and (min-width: 1020px) and (max-width: 1060px) {
+            .img1 {
+                width: 600px;
+                height: 300px;
+            }
+        }
+
+        /* 1060px    -   1100px */
+        @media screen and (min-width: 1060px) and (max-width: 1100px) {
+            .img1 {
+                width: 650px;
+                height: 300px;
+            }
+        }
+
+        /* 1100px    -   1140px */
+        @media screen and (min-width: 1100px) and (max-width: 1439px) {
+            .img1 {
+                width: 660px;
+                height: 300px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-inicio">
+        <h1> Juegos Populares </h1>
+        <nav class="secciones">
+            <table style="width: 100%;">
+                <tr>
+                    <td style="padding: 10px 31px 10px 10px; width: 50%;">
+                        <a href="https://vimm.net" target="_blank" class="link"> Jugar </a>
+                    </td>
+
+                    <td style="padding: 10px; width: 50%;">
+                        <a href="" target="_blank" class="link"> Quienes Somos </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; width: 50%;">
+                        <a href="" target="_blank" class="link"> Contacto </a>
+                    </td>
+
+                    <td style="padding: 10px 46px 10px 10px; width: 50%;">
+                        <a href="" target="_blank" class="link"> Recursos </a>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section>
+        <div class="parrafo">
+            <p> Esta página recopila una lista con los juegos más influyentes de su respectiva epoca, conocerás la
+                historia,
+                especificaciones, información y alcance de cada juego. Esta lista está ordenada cronologicamente, si
+                deseas
+                ver una epoca especifica revisar el índice:<br> </p>
+        </div>
+
+        <br>
+
+        <div class="contenedor">
+            <div>
+                <div class="contenedor-lista">
+                    <ol class="lista">
+                        <li>
+                            <p> 1980 - 1990 </p>
+                        </li>
+
+                        <li>
+                            <p> 1990 - 2000 </p>
+                        </li>
+
+                        <li>
+                            <p> 2000 - 2010 </p>
+                        </li>
+
+                        <li>
+                            <p> 2010 - 2020 </p>
+                        </li>
+
+                        <li>
+                            <p> 2020 - Actualidad </p>
+                        </li>
+                    </ol>
+                </div>
+                <aside class="nota">
+                    <p> Nota: La lista se ha elaborado sin precedencia, es una sintesis basada
+                        en información recopilada y sintetizada de diversas fuentes. </p>
+                </aside>
+
+            </div>
+            <figure class="contenedor-imagen1">
+                <img src="https://i.blogs.es/4d650a/gogga/1366_2000.jpeg" alt="juegos" class="img1">
+            </figure>
+        </div>
+    </section>
+    <hr>
+    <!--                                                                                                                                                                        -->
+    <!-- 1980 - 1990-->
+    <article>
+        <div>
+            <span style="display: flex; justify-content: center; align-items: center;">
+                <h1 class="titulocen"> 1980 - 1990 </h1>
+            </span>
+            <div class="parrafo">
+                <p>
+                    En la década de los 80, surgieron los videojuegos, una forma nueva de entretenimiento que cautivó a
+                    millones de personas. Época marcada por los graficos pixelados y los sonidos sintetizados. <br><br>
+
+                    Los videojuegos de los 80 definieron el panorama de la cultura pop, con personajes icónicos como
+                    Mario,
+                    Pac-Man, Donkey Kong, Mega Man, entre otros. <br> <br>
+
+                    En esta sección veremos los 5 juegos que más influencia tuvieron entre 1980 y 1990:<br>
+                </p>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Pac-Man -->
+        <section class="seccion">
+            <h2 class="tituloizq"> Pac-Man </h2>
+
+            <div class="parrafo">
+                <p> Creado por el diseñador de videojuegos <span class="sub">Toru Iwatani</span> de la empresa de Namco,
+                    distribuido por Midway
+                    Games
+                    al mercado de Estados Unidos a mediados de el año 1980. <br> <br>
+                    Pac-Man fué lanzado el 22 de Mayo de 1980 y fue todo un éxito, convirtiendose en un fenómeno mundial
+                    en la
+                    industria de los videojuegos. <br> <br> Pac-Man vendió
+                    un
+                    total de 293.822 máquinas desde 1981 hasta 1987 dominando parcialmente el mundo virtual y de paso
+                    consiguiendo un récord Guiness del "Videojuego de arcade más exitoso de todos los tiempos", sin duda
+                    uno de los juegos más emblemáticos de los 80.
+                </p>
+            </div>
+
+            <!-- Info Pac-man-->
+            <figure class="contenedor-pacman">
+                <div class="contenedor-pacman-img">
+                    <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/04/pac-man-2682107.jpg?tf=3840x"
+                        alt="Pacman" class="img-info">
+                </div>
+
+                <div class="contenedor-pacman-parrafo">
+                    <p style="margin-top: 0px; margin-bottom: 0px;">
+                    <ul style="padding: 0px 0px 0px 10px;">
+                        <p style="margin: 0px;">
+                            El objetivo del juego es simple, controlar a <span style="color: yellow;">Pac-Man</span>, un
+                            personaje amarillo redondo
+                            con una boca
+                            grande, y comer todas las <span class="sub">píldoras</span> o "puntos" dispersos por el
+                            laberinto mientras evitas ser
+                            atrapado por cuatro fantasmas. <br> <br>
+                        </p>
+
+                        <li>
+                            <p style="margin: 0px;">
+                                Puedes mover a Pac-Man hacia arriba, abajo, izquierda y derecha para navegar por el
+                                laberinto.
+                                <br> <br>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p style="margin: 0px;">
+                                Además de los puntos normales, también hay <span class="sub">frutas</span> que aparecen
+                                periódicamente en el
+                                laberinto y
+                                valen más puntos si Pac-Man las come. También hay "puntos grandes" o "píldoras de poder"
+                                que,
+                                cuando Pac-Man los come, le dan temporalmente la capacidad de comer a los fantasmas.
+                                <br> <br>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p style="margin: 0px;">
+                                En el laberinto hay cuatro fantasmas, cada uno con su propio nombre y color (<span
+                                    style="color: red;">Blinky</span>,
+                                <span style="color: violet;">Pinky</span>, <span style="color: aqua;">Inky</span> y
+                                <span style="color: orangered;"> Clyde </span>). Estos fantasmas intentarán
+                                atrapar a Pac-Man. Si Pac-Man es
+                                atrapado por un fantasma, pierde una <span class="sub"> vida </span>.
+                            </p>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </figure>
+        </section>
+    </article>
+</body>
+
+
+
+</html>
