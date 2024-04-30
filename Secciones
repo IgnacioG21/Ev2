@@ -1,0 +1,503 @@
+Para las secciones "Contacto, Quienes somos, Recursos" Se creó una página aparte, linkeada relativamente para su acceso en el header de la página principal:
+Cada página tiene su finalidad, y al final de cada pagina se deja un "boton" link para volver a el inicio "Home"
+El CSS lo hice dentro del mismo archivo, para no llenar el estilo principal o crear otros estilos y no llenar tanto la carpeta.
+Dejaré el codigo de cada página:
+
+CONTACTO:
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacto </title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            font-family: sans-serif
+        }
+
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            width: 100px;
+            text-align: center;
+        }
+
+        input {
+            width: 175px;
+        }
+
+
+        /* Clases */
+        .contenedor-texto {
+            border: 5px solid white;
+            padding: 10px;
+            padding-top: 0px;
+        }
+
+        .contenedor-contacto {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 2;
+            gap: 10px;
+        }
+
+        .contenedor-whatsapp {
+            border: 3px solid green;
+            margin-top: 15px;
+            padding: 10px;
+        }
+
+        .contenedor-instagram {
+            border: 3px solid palevioletred;
+            margin-top: 15px;
+            padding: 10px;
+        }
+
+        .contenedor-correo {
+            border: 3px solid red;
+            margin-top: 15px;
+            padding: 10px;
+        }
+
+        .contenedor-facebook {
+            border: 3px solid blue;
+            margin-top: 15px;
+            padding: 10px;
+        }
+
+        .link {
+            background-color: white;
+            border: 1px solid red;
+            border-radius: 10px;
+            color: black;
+            font-weight: 550;
+            font-size: 20px;
+            font-family: monospace;
+            text-decoration: none;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor-texto">
+        <h1> Contacto </h1>
+        <p>
+            Si quieres contactarte conmigo, ingresa tu nombre, teléfono y/o correo, o simplemente escríbeme a través de
+            alguna de mis redes sociales.
+        </p>
+    </div>
+    <br>
+    <form>
+        <fieldset>
+            <label for="nombreid">Nombre:</label>
+            <input type="text" id="nombreid" name="nombre"><br>
+            <label for="teléfonoid">Teléfono:</label>
+            <input type="text" id="teléfonoid" name="teléfono"><br>
+            <label for="correoid">Correo:</label>
+            <input type="text" id="correoid" name="correo"><br>
+            <input type="submit" value="Enviar"
+                onclick="alert('Gracias por contactarte conmigo, pronto te enviaré un mensaje!')">
+        </fieldset>
+    </form>
+
+
+    <!-- Si existieran colocar link <a>-->
+    <section class="contenedor-contacto">
+        <div class="contenedor-instagram">
+            <h2> Instagram </h2>
+            <p> IgnacioGarridoIG</p>
+        </div>
+
+        <div class="contenedor-whatsapp">
+            <h2> Whatsapp </h2>
+            <p> +56 9 1234 5678</p>
+        </div>
+
+        <div class="contenedor-facebook">
+            <h2> Facebook </h2>
+            <p> IgnacioGarridoFB</p>
+        </div>
+
+        <div class="contenedor-correo">
+            <h2> Correo </h2>
+            <p> Ignacio@gmail.com</p>
+        </div>
+    </section>
+    <p> Espero que hayas disfrutado de la recopilación de juegos que te he preparado. <br>No hay nada como pasar un buen
+        rato jugando videojuegos clásicos para relajarse y divertirse. <br>¡Que tengas una buena experiencia! </p>
+
+    <a href="Ev2.html" title="Volver a review" class="link"> Home </a>
+
+    <h3> ¡Gracias por visitar mi pagina! </h3>
+
+</body>
+
+</html>
+
+
+
+Quienes Somos 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quienes somos </title>
+    <style>
+        body {
+            background-color: black;
+            border: 5px solid white;
+            border-radius: 5px;
+            color: white;
+            font-family: sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            border: 2px solid red;
+            border-radius: 25px;
+            padding: 15px;
+
+        }
+
+        /* Clases */
+        .borde-img {
+            border: 5px solid red;
+            border-radius: 25px;
+        }
+
+        .contenedor {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 50%;
+
+        }
+
+        .contenedor-parrafo {
+            border: 2px solid white;
+            border-radius: 25px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .link {
+            background-color: white;
+            border: 1px solid red;
+            border-radius: 10px;
+            color: black;
+            font-weight: 550;
+            font-size: 20px;
+            font-family: monospace;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        /* Media Querys */
+        @media screen and (max-width: 1300px) {
+            .contenedor {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>¿Quienes Somos?</h1>
+        <div class="contenedor-parrafo">
+            <p>
+                Soy un estudiante de Inacap, lo que acabas de ver fué mi primera página, o la primera que me tomo su
+                desarrollo con
+                seriedad,
+                tengo 20 años, hace 2 meses que conocí HTML, me parece entretenido crear páginas y aprender más sobre
+                este
+                lenguaje de marcado, así como también CSS para organizar y personalizar de mejor manera mis futuras
+                páginas.
+                <br><br>
+                Actualmente, me encuentro estudiando para convertirme en Analista Programador y explorando todo lo
+                relacionado con el fascinante mundo del desarrollo de software. <br><br>
+                Desde que era joven, he sido un apasionado de los videojuegos. Me encanta sumergirme en mundos virtuales
+                y explorar nuevas historias y desafíos. Algunos de mis juegos favoritos incluyen Grand Theft Auto (GTA),
+                Valorant, League of Legends (LoL) y muchos más. Siempre estoy buscando nuevas experiencias de juego y
+                emocionantes aventuras en el mundo virtual. <br><br>
+
+                Además de mi amor por los videojuegos, disfruto aprendiendo sobre nuevas tecnologías y mejorando mis
+                habilidades de programación. Creo que el mundo digital ofrece infinitas posibilidades creativas y estoy
+                emocionado de formar parte de esta emocionante era tecnológica.
+
+                Disfruto viendo videos de comediantes chilenos y películas de Marvel en mi tiempo libre. Nada mejor que
+                unas buenas risas con los comediantes chilenos y sumergirme en el emocionante universo cinematográfico
+                de Marvel.
+            </p>
+        </div>
+        <br>
+        <a href="Ev2.html" title="Volver a review" class="link"> Home </a>
+        <br>
+        <img src="https://cdn6.aptoide.com/imgs/7/8/3/7838cf4d78e0ad7591f1b3cbed4d4b87_icon.png" alt="" width="25%"
+            class="borde-img">
+        <br>
+    </div>
+
+</body>
+
+</html>
+
+
+Recursos
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Recursos "Juegos Iconicos" </title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            font-family: sans-serif
+        }
+
+        h1 {
+            border: 2px solid red;
+            border-radius: 25px;
+            padding: 15px;
+
+        }
+
+        /* Clases */
+        /* Pacman */
+        .contenedor-pacman {
+            border: 2px solid white;
+            background-color: yellow;
+            border-radius: 10px;
+            color: black;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .contenedor-pacman>div>a {
+            border: 2px solid red;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        /* Donkey Kong */
+        .contenedor-dk {
+            border: 2px solid white;
+            background-color: rgb(139, 80, 11);
+            border-radius: 10px;
+            color: black;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .contenedor-dk>div>a {
+            border: 2px solid red;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        /* 1942 */
+        .contenedor-1942 {
+            border: 2px solid white;
+            background-color: lightseagreen;
+            border-radius: 10px;
+            color: black;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .contenedor-1942>div>a {
+            border: 2px solid red;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        /* Double Dragon */
+        .contenedor-dd {
+            border: 2px solid white;
+            background-color: rgb(15, 168, 15);
+            border-radius: 10px;
+            color: black;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .contenedor-dd>div>a {
+            border: 2px solid red;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        /* Mario */
+        .contenedor-mario {
+            border: 2px solid white;
+            background-color: rgb(180, 15, 15);
+            border-radius: 10px;
+            color: black;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .contenedor-mario>div>a {
+            border: 2px solid red;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        /* Body */
+        .contenedor-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        .contenedor-parrafo {
+            border: 2px solid white;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .link {
+            background-color: white;
+            border: 1px solid red;
+            border-radius: 10px;
+            color: black;
+            font-weight: 550;
+            font-size: 20px;
+            font-family: monospace;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        /* Media Querys */
+        @media screen and (max-width: 800px) {
+            .contenedor-parrafo {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Recursos </h1>
+
+    <div class="contenedor-parrafo">
+        <p>
+            En esta página encontrarás todos los recursos relacionados con la realización de la página, por si deseas
+            revisar más a fondo la información sobre algún juego que te haya interesado.
+        </p>
+    </div>
+
+    <div class="contenedor-pacman">
+        <h3>Pac-Man</h3>
+        <div class="contenedor-links">
+            <a href="https://en.wikipedia.org/wiki/Pac-Man" target="_blank">Info</a>
+            <a href="https://es.wikipedia.org/wiki/Pac-Man" target="_blank">Info 1</a>
+            <a href="https://www.youtube.com/watch?v=dScq4P5gn4A" target="_blank">Video</a>
+        </div>
+    </div>
+
+    <div class="contenedor-dk">
+        <h3>Donkey Kong</h3>
+        <div class="contenedor-links">
+            <a href="https://es.wikipedia.org/wiki/Donkey_Kong_(videojuego)" target="_blank">Info</a>
+            <a href="https://www.mariowiki.com/Donkey_Kong_(game)" target="_blank">Info 1</a>
+            <a href="https://www.youtube.com/watch?v=jWiLt3BSJp0" target="_blank">Video</a>
+        </div>
+    </div>
+
+    <div class="contenedor-1942">
+        <h3>1942</h3>
+        <div class="contenedor-links">
+            <a href="https://www.imdb.com/title/tt0185835/" target="_blank">Info</a>
+            <a href="https://en.wikipedia.org/wiki/1942_(video_game)" target="_blank">Info 1</a>
+            <a href="https://www.youtube.com/watch?v=1yMGtlNjcMY" target="_blank">Video</a>
+        </div>
+    </div>
+
+    <div class="contenedor-dd">
+        <h3>Double Dragon</h3>
+        <div class="contenedor-links">
+            <a href="https://en.wikipedia.org/wiki/Double_Dragon" target="_blank">Info</a>
+            <a href="https://doubledragon.fandom.com/es/wiki/Double_Dragon" target="_blank">Info 1</a>
+            <a href="https://www.youtube.com/watch?v=rTy6NS7Bciw" target="_blank">Video</a>
+        </div>
+    </div>
+
+    <div class="contenedor-mario">
+        <h3>Mario Bros</h3>
+        <div class="contenedor-links">
+            <a href="https://en.wikipedia.org/wiki/Mario_Bros." target="_blank">Info</a>
+            <a href="https://www.mariowiki.com/Mario_Bros._(game)" target="_blank">Info 1</a>
+            <a href="https://www.youtube.com/watch?v=ly8DofqCuOs" target="_blank">Video</a>
+        </div>
+    </div>
+
+    <br>
+    <a href="Ev2.html" title="Volver a review" class="link"> Home </a>
+    <br>
+    <div class="contenedor-parrafo">
+        <p>
+            Agradecer a Vimm´s Lair por la gran coleccion de juegos, extraje los links de ahí, en el apartado "Jugar" de
+            cada juego, para que el usuario tenga la oportunidad de probar al instante el juego presente en la web. <br>
+            <br>
+            Obviamente, agradecer a Wikipedia, Wiki de juegos y Creadores de contenido de Youtube que subieron los
+            Gameplays linkeados, sin su trabajo
+            dificilmente hubiera recopilado la información a tiempo.<br><br>También se usó chat gpt para comprobar la
+            integridad de
+            la información. Espero te haya gustado la recopilación realizada, disfruta de increibles juegos!
+        </p>
+    </div>
+    <h3> ¡Gracias por visitar mi página! </h3>
+</body>
+
+</html>
+
+
+
