@@ -2,6 +2,7 @@
 Ignacio Garrido
 21.559.162-k
 TI2031/V-B50-N3-P12-C1/V La Granja B5
+Inacap
 
 
 Este es un repositorio de la evaluación 2 de Programación Front End Inacap La Granja
